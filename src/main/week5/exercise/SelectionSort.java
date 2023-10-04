@@ -1,9 +1,18 @@
 package main.week5.exercise;
 
+import java.util.Random;
+
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] a = {6,4,-5,-3,5,7,1,9,-5,-2};
+        Random r = new Random();
+        int m = 200000;
+        int[] a = new int[m];
         int n = a.length;
+
+        for(int i = 0; i < n; ++i){
+            a[i] = r.nextInt(200000);
+        }
+        long start = System.currentTimeMillis();
         int t = 0;
         int temp;
         for(int i = 0; i < n-1; ++i){
@@ -16,9 +25,13 @@ public class SelectionSort {
             a[t] = a[i];
             a[i] = temp;
         }
+        long end = System.currentTimeMillis();
+        System.out.println(end-start);
+        /*
         for(int i = 0; i < n; ++i){
             System.out.print(a[i] + " ");
         }
+         */
     }
 
 
