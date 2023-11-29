@@ -32,7 +32,8 @@ class BalancedBrackets {
                 else st.pop();
             }
         }
-        if(st.isEmpty()) return "YES"; else return "NO";
+        if(st.isEmpty()) return "YES";
+        else return "NO";
 
     }
 

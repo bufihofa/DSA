@@ -9,7 +9,7 @@ public class SimpleTextEditor {
         Scanner sc = new Scanner(System.in);
         int q = sc.nextInt();
         String text = "";
-        Stack <String> st = new Stack<>();
+        Stack<String> st = new Stack<>();
         for (int i = 0; i < q; ++i) {
             int request = sc.nextInt();
             switch (request) {
